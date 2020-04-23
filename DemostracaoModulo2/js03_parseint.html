@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js03_parseint</title>
+</head>
+<body>
+    <h2>Somatório de dois números inteiros com conversão de dados</h2>
+    <form name="MeuFormulario" action="" method="POST">
+        Entre com o valor 1: <input type="text" name="f_n1" /><p></p>
+        Entre com o valor 2: <input type="text" name="f_n2" /><p></p>
+        <input type="button" name="btn_somar" value="Somar" onclick="soma()">
+        <input type="reset" name="btn_apagar" value="Apagar" />
+    </form>
+
+    <script>
+        var js_01;
+        var js_02;
+        var js_soma;
+
+        function soma(){
+            js_01 = parseInt(document.MeuFormulario.f_n1.value);
+            js_02 = parseInt(document.MeuFormulario.f_n2.value);
+
+            js_soma = js_01 + js_02;
+
+            window.alert("Resultado da Somatória é " + js_soma);
+        }
+
+    </script>
+</body>
+</html>

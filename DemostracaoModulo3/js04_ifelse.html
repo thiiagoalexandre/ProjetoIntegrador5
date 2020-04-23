@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js04_ifelse</title>
+</head>
+<body>
+<script language="javascript">
+
+//variaveis do programa
+var n1;
+var n2;
+
+//insersão dos dados
+n1 = parseInt(window.prompt('Informe o primeiro número:', '00'));
+n2 = parseInt(window.prompt('Informe o segundo número:', '00'));
+
+//print na tela dos dados digitados
+document.write('Número 1 digitado = ' + n1);
+document.write('<br>Número 2 digitado = ' + n2);
+
+//condicional para organizar os números em ordem crescente
+if(n1<n2){
+    document.write('<p><br>Classificação em ordem crescente:</br>' +n1 +' e ' +n2);
+}
+else{
+    document.write('<p><br>Classificação em ordem crescente:</br>' +n2 +' e ' +n1);
+}
+
+</script>
+</body>
+</html>
